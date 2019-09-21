@@ -3,17 +3,13 @@ package array;
 import java.util.Arrays;
 
 public class ProductOfArrayExceptSelf {
-    public static int[] run(int[] nums) {
-        return new ProductOfArrayExceptSelf().productExceptSelf(nums);
-    }
-
     /**
      * Default version
      * <p>
      * Time: O(n) <br>
      * Space: O(1) without the result array
      */
-    private int[] productExceptSelf(int[] nums) {
+    public static int[] productExceptSelf(int[] nums) {
         int[] result = new int[nums.length];
 
         int zeroIndex = -1;

@@ -1,17 +1,13 @@
 package array;
 
 public class MaximumSubarray {
-    public static int run(int[] nums) {
-        return new MaximumSubarray().maxSubArray(nums);
-    }
-
     /**
      * Default version
      * <p>
      * Time: O(n) <br>
      * Space: O(1)
      */
-    private int maxSubArray(int[] nums) {
+    public static int maxSubArray(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
         int currentSum = 0;
 

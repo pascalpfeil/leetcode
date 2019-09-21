@@ -4,17 +4,13 @@ import static java.lang.Math.max;
 import static java.lang.Math.min;
 
 public class MaximumProductSubarray {
-    public static int run(int[] nums) {
-        return new MaximumProductSubarray().maxProduct(nums);
-    }
-
     /**
      * Default version
      * <p>
      * Time: O(n) <br>
      * Space: O(1)
      */
-    private int maxProduct(int[] nums) {
+    public static int maxProduct(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
         }

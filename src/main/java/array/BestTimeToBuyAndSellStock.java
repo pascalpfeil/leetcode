@@ -1,17 +1,13 @@
 package array;
 
 public class BestTimeToBuyAndSellStock {
-    public static int run(int[] prices) {
-        return new BestTimeToBuyAndSellStock().maxProfit(prices);
-    }
-
     /**
      * Default version
      * <p>
      * Time: O(n) <br>
      * Space: O(1)
      */
-    private int maxProfit(int[] prices) {
+    public static int maxProfit(int[] prices) {
         if (prices.length == 0) return 0;
 
         int priceAtBuyTime = prices[0];
